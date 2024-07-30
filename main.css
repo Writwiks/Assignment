@@ -13,64 +13,6 @@ body {
 }
 
 
-
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .hero {
-        height: 50vh;
-    }
-
-    .hero-content {
-        width: 100%;
-        padding: 0 1rem;
-    }
-
-    .features-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feature img {
-        width: 80px; /* Adjusted for smaller screens */
-        height: 80px;
-    }
-
-    .review-slider {
-        flex-direction: column;
-    }
-
-    .product-info {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .trust-elements {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .trust-element img {
-        width: 80px; /* Adjusted for smaller screens */
-        height: 80px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content {
-        font-size: 0.8rem;
-    }
-
-    .btn {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.8rem;
-    }
-
-    footer {
-        font-size: 0.8rem;
-    }
-}
-
 /* Main CSS */
 header {
     background: #333;
@@ -82,29 +24,31 @@ header {
 .hero {
     position: relative;
     background: url('https://www.beysis.com/cdn/shop/files/Eco_mobile_banner.jpg?v=1693894955') no-repeat center center/cover;
-    height: 90vh;
+    height: 100vh;
     color: #fff;
     text-align: center;
 }
-.hero img{
-    height: 90vh;
-}
+
 .hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
 }
 
 .features-container {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 
 .feature {
     text-align: center;
     padding: 1rem;
+    flex: 1 1 200px; 
 }
 
 .feature img {
@@ -147,12 +91,15 @@ header {
 
 .product-info img {
     max-width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
 .product-text {
     max-width: 600px;
+    width: 100%;
+    padding: 1rem;
 }
 
 .product-text ul {
@@ -188,11 +135,12 @@ header {
 .trust-element {
     text-align: center;
     margin: 1rem;
+    flex: 1 1 200px;
 }
 
 .trust-element img {
-    width: 150px; 
-    height: 150px; 
+    width: 100px; 
+    height: 100px; 
     object-fit: contain; 
     display: block;
     margin: auto;
@@ -226,4 +174,119 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+#features {
+    padding: 2rem;
+    background: #fff;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+#features {
+    margin-left: 2rem; 
+}
+
+#features{
+    margin-left: 1rem; 
+}
+#reviews {
+    padding: 2rem;
+    background: #fff;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+#reviews {
+    margin-left: 2rem; 
+}
+
+#reviews {
+    margin-left: 1rem; 
+}
+
+#policy {
+    padding: 2rem;
+    background: #fff;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+#policy h2 {
+    margin-left: 1rem; 
+}
+
+#policy p {
+    margin-left: 1rem; 
+}
+
+#about {
+    padding: 2rem;
+    background: #fff;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+#about h2 {
+    margin-left: 1rem; 
+}
+
+#about p {
+    margin-left: 1rem; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .review-slider {
+        flex-direction: column;
+    }
+
+    .product-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .trust-elements {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trust-element img {
+        width: 80px; /* Adjusted for smaller screens */
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
